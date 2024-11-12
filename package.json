@@ -1,8 +1,21 @@
 {
-  "name": "template-ts-npm",
-  "version": "1.1.0",
-  "main": "src/index.ts",
+  "name": "@monadica/lazy-streams",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monadicarts/lazy-streams.git"
+  },
   "scripts": {
     "rollup": "rollup -c",
     "build": "tsup src/index.ts --format esm,cjs,iife --legacy-output --dts --minify",
@@ -21,7 +34,7 @@
   ],
   "author": "Monadica <monadicarts@gmail.com>",
   "license": "MIT",
-  "description": "Base TypeScript NPM Project Template for Monadica.",
+  "description": "Lazy data stream processing in TypeScript.",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
