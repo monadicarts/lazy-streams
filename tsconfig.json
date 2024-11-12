@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "esnext", // Change this from "commonjs" to "esnext"
+    "target": "ES2015",
+    "module": "ESNext", // Change this from "commonjs" to "esnext"
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
     "strict": true,
+    "downlevelIteration": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
-    "lib": ["es6", "dom"],
+    "lib": ["ES2015", "DOM"],
     "types": ["jest"]
   },
   "include": ["src"],

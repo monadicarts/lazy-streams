@@ -1,6 +1,6 @@
 {
   "name": "@monadica/lazy-streams",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -18,13 +18,13 @@
   },
   "scripts": {
     "rollup": "rollup -c",
+    "publish:public": "npm publish --access public",
     "build": "tsup src/index.ts --format esm,cjs,iife --legacy-output --dts --minify",
     "test": "jest",
     "docs": "typedoc",
     "lint": "eslint ./src/**",
     "format": "prettier --write .",
-    "release": "standard-version",
-    "publish": "npm run release && npm publish"
+    "release": "standard-version"
   },
   "keywords": [
     "typescript",

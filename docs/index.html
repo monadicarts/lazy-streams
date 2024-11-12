@@ -72,8 +72,8 @@
             ></a>
           </h1>
           <p>
-            Welcome to <strong>lazy-streams</strong>, an elegant and modular
-            TypeScript library. Developed by
+            Welcome to <strong>@monadica/lazy-streams</strong>, an elegant and
+            modular TypeScript library. Developed by
             <a href="http://monadica.com" target="_blank" class="external"
               >Monadica</a
             >.
@@ -90,14 +90,22 @@
             ></a>
           </h2>
           <ul>
-            <li><a href="#md:features">Features</a></li>
-            <li><a href="#md:getting-started">Getting Started</a></li>
-            <li><a href="#md:project-structure">Project Structure</a></li>
-            <li><a href="#md:usage">Usage</a></li>
-            <li><a href="#md:scripts">Scripts</a></li>
-            <li><a href="#md:configuration">Configuration</a></li>
-            <li><a href="#md:contributing">Contributing</a></li>
-            <li><a href="#md:license">License</a></li>
+            <li>
+              <a href="#md:lazystreams">LazyStreams</a>
+              <ul>
+                <li><a href="#md:table-of-contents">Table of Contents</a></li>
+                <li><a href="#md:features">Features</a></li>
+                <li><a href="#md:installation">Installation</a></li>
+                <li><a href="#md:getting-started">Getting Started</a></li>
+                <li><a href="#md:project-structure">Project Structure</a></li>
+                <li><a href="#md:usage">Usage</a></li>
+                <li><a href="#md:scripts">Scripts</a></li>
+                <li><a href="#md:configuration">Configuration</a></li>
+                <li><a href="#md:contributing">Contributing</a></li>
+                <li><a href="#md:license">License</a></li>
+                <li><a href="#md:contact">Contact</a></li>
+              </ul>
+            </li>
           </ul>
           <hr />
           <a id="md:features" class="tsd-anchor"></a>
@@ -138,6 +146,24 @@
             </li>
           </ul>
           <hr />
+          <a id="md:installation" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            Installation<a
+              href="#md:installation"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
+          <p>
+            To install the latest version of
+            <code>@monadica/lazy-streams</code> from npm, use the following
+            command:
+          </p>
+          <pre><code class="bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">install</span><span class="hl-1"> </span><span class="hl-2">@monadica/lazy-streams</span>
+</code><button type="button">Copy</button></pre>
+
           <a id="md:getting-started" class="tsd-anchor"></a>
           <h2 class="tsd-anchor-link">
             Getting Started<a
@@ -148,20 +174,10 @@
                 <use href="assets/icons.svg#icon-anchor"></use></svg
             ></a>
           </h2>
-          <p>
-            To use this template for your next TypeScript npm package, follow
-            these steps:
-          </p>
-          <a id="md:1-clone-the-repository" class="tsd-anchor"></a>
-          <h3 class="tsd-anchor-link">
-            1. Clone the Repository<a
-              href="#md:1-clone-the-repository"
-              aria-label="Permalink"
-              class="tsd-anchor-icon"
-              ><svg viewBox="0 0 24 24">
-                <use href="assets/icons.svg#icon-anchor"></use></svg
-            ></a>
-          </h3>
+          <p>To use or modify this library, follow these steps:</p>
+          <ol>
+            <li>Clone the Repository</li>
+          </ol>
           <p>
             Clone this repository to your local machine and navigate to the
             project directory.
@@ -182,70 +198,133 @@
           <p>
             You’re now ready to start building your own TypeScript npm package!
           </p>
-          <p>Project Structure</p>
+          <a id="md:project-structure" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            Project Structure<a
+              href="#md:project-structure"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
           <pre><code class="bash"><span class="hl-0">lazy-streams/</span><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">CHANGELOG.md</span><span class="hl-1">             </span><span class="hl-3"># Automatically generated changelog for tracking version history and changes</span><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">LICENSE</span><span class="hl-1">                  </span><span class="hl-3"># License file, typically contains the MIT license or other open-source license terms</span><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">README.md</span><span class="hl-1">                </span><span class="hl-3"># Main documentation file for the project, with setup, usage instructions, and more</span><br/><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">docs</span><span class="hl-1">                     </span><span class="hl-3"># Directory containing generated documentation files from TypeDoc</span><br/><span class="hl-1">|   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">assets</span><span class="hl-1">               </span><span class="hl-3"># Assets for the documentation, such as CSS, icons, and JavaScript files for styling and functionality</span><br/><span class="hl-1">|   |   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">highlight.css</span><span class="hl-1">    </span><span class="hl-3"># CSS file for syntax highlighting in code samples within the documentation</span><br/><span class="hl-1">|   |   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">icons.js</span><span class="hl-1">         </span><span class="hl-3"># JavaScript file for managing icons in the documentation</span><br/><span class="hl-1">|   |   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">icons.svg</span><span class="hl-1">        </span><span class="hl-3"># SVG file containing icon definitions</span><br/><span class="hl-1">|   |   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">main.js</span><span class="hl-1">          </span><span class="hl-3"># Main JavaScript file for documentation page interactivity</span><br/><span class="hl-1">|   |   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">navigation.js</span><span class="hl-1">    </span><span class="hl-3"># JavaScript file for handling navigation in the documentation</span><br/><span class="hl-1">|   |   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">search.js</span><span class="hl-1">        </span><span class="hl-3"># JavaScript file for implementing search functionality within the documentation</span><br/><span class="hl-1">|   |   </span><span class="hl-0">└──</span><span class="hl-1"> </span><span class="hl-2">style.css</span><span class="hl-1">        </span><span class="hl-3"># General styling for the documentation pages</span><br/><span class="hl-1">|   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">classes</span><span class="hl-1">              </span><span class="hl-3"># Documentation pages for each class defined in the project</span><br/><span class="hl-1">|   |   </span><span class="hl-0">└──</span><span class="hl-1"> </span><span class="hl-2">LazyStream.html</span><span class="hl-1">  </span><span class="hl-3"># HTML documentation page for the LazyStream class</span><br/><span class="hl-1">|   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">index.html</span><span class="hl-1">           </span><span class="hl-3"># Main entry point for the generated documentation</span><br/><span class="hl-1">|   </span><span class="hl-0">└──</span><span class="hl-1"> </span><span class="hl-2">modules.html</span><span class="hl-1">         </span><span class="hl-3"># Documentation index for modules in the project</span><br/><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">eslint.config.cjs</span><span class="hl-1">        </span><span class="hl-3"># ESLint configuration file in CommonJS format for linting the codebase</span><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">jest.config.cjs</span><span class="hl-1">          </span><span class="hl-3"># Jest configuration file in CommonJS format for setting up the testing environment</span><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">package-lock.json</span><span class="hl-1">        </span><span class="hl-3"># Automatically generated lock file for managing exact dependency versions</span><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">package.json</span><span class="hl-1">             </span><span class="hl-3"># Main package configuration file with metadata, dependencies, and scripts</span><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">rollup.config.js</span><span class="hl-1">         </span><span class="hl-3"># Rollup configuration file for bundling the project into different module formats</span><br/><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">src</span><span class="hl-1">                      </span><span class="hl-3"># Directory containing the source code and tests</span><br/><span class="hl-1">|   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">LazyStream.ts</span><span class="hl-1">        </span><span class="hl-3"># Main implementation file for the LazyStream class</span><br/><span class="hl-1">|   </span><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">__tests__</span><span class="hl-1">            </span><span class="hl-3"># Directory for unit tests</span><br/><span class="hl-1">|   |   </span><span class="hl-0">└──</span><span class="hl-1"> </span><span class="hl-2">LazyStream.spec.ts</span><span class="hl-1"> </span><span class="hl-3"># Unit test file for the LazyStream class</span><br/><span class="hl-1">|   </span><span class="hl-0">└──</span><span class="hl-1"> </span><span class="hl-2">index.ts</span><span class="hl-1">             </span><span class="hl-3"># Entry point of the module, exports main classes and functions</span><br/><br/><span class="hl-0">├──</span><span class="hl-1"> </span><span class="hl-2">tsconfig.json</span><span class="hl-1">            </span><span class="hl-3"># TypeScript configuration file with compiler options</span><br/><span class="hl-0">└──</span><span class="hl-1"> </span><span class="hl-2">typedoc.json</span><span class="hl-1">             </span><span class="hl-3"># TypeDoc configuration file for generating documentation based on TSDoc comments</span>
 </code><button type="button">Copy</button></pre>
 
-          <p>Usage</p>
+          <a id="md:usage" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            Usage<a
+              href="#md:usage"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
           <p>
-            After setting up the template and customizing it for your project,
-            you can start adding your TypeScript code in the src/ directory.
+            Here’s a short example of how to use the
+            <code>@monadica/lazy-streams</code> library to create a lazy stream,
+            apply transformations, and retrieve results:
           </p>
-          <p>
-            Export your public API in src/index.ts, and this will serve as the
-            entry point for your npm package. Here’s an example of a basic
-            function and class you can add:
-          </p>
-          <pre><code class="typescript"><span class="hl-3">// src/index.ts</span><br/><span class="hl-4">export</span><span class="hl-1"> </span><span class="hl-5">const</span><span class="hl-1"> </span><span class="hl-0">greet</span><span class="hl-1"> = (</span><span class="hl-6">name</span><span class="hl-1">: </span><span class="hl-7">string</span><span class="hl-1">): </span><span class="hl-7">string</span><span class="hl-1"> </span><span class="hl-5">=&gt;</span><span class="hl-1"> </span><span class="hl-2">`Hello, </span><span class="hl-5">${</span><span class="hl-6">name</span><span class="hl-5">}</span><span class="hl-2">!`</span><span class="hl-1">;</span><br/><br/><span class="hl-4">export</span><span class="hl-1"> </span><span class="hl-5">class</span><span class="hl-1"> </span><span class="hl-7">Greeter</span><span class="hl-1"> {</span><br/><span class="hl-1">  </span><span class="hl-5">constructor</span><span class="hl-1">(</span><span class="hl-5">public</span><span class="hl-1"> </span><span class="hl-6">greeting</span><span class="hl-1">: </span><span class="hl-7">string</span><span class="hl-1">) {}</span><br/><span class="hl-1">  </span><span class="hl-0">greet</span><span class="hl-1">(</span><span class="hl-6">name</span><span class="hl-1">: </span><span class="hl-7">string</span><span class="hl-1">): </span><span class="hl-7">string</span><span class="hl-1"> {</span><br/><span class="hl-1">    </span><span class="hl-4">return</span><span class="hl-1"> </span><span class="hl-2">`</span><span class="hl-5">${</span><span class="hl-5">this</span><span class="hl-8">.</span><span class="hl-6">greeting</span><span class="hl-5">}</span><span class="hl-2">, </span><span class="hl-5">${</span><span class="hl-6">name</span><span class="hl-5">}</span><span class="hl-2">!`</span><span class="hl-1">;</span><br/><span class="hl-1">  }</span><br/><span class="hl-1">}</span>
+          <pre><code class="typescript"><span class="hl-4">import</span><span class="hl-1"> { </span><span class="hl-5">LazyStream</span><span class="hl-1"> } </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-2">&#39;@monadica/lazy-streams&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-3">// Create a lazy stream from an array</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">stream</span><span class="hl-1"> = </span><span class="hl-5">LazyStream</span><span class="hl-1">.</span><span class="hl-0">from</span><span class="hl-1">([</span><span class="hl-8">1</span><span class="hl-1">, </span><span class="hl-8">2</span><span class="hl-1">, </span><span class="hl-8">3</span><span class="hl-1">, </span><span class="hl-8">4</span><span class="hl-1">, </span><span class="hl-8">5</span><span class="hl-1">]);</span><br/><br/><span class="hl-3">// Apply transformations: multiply each element by 2 and filter even results</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">transformedStream</span><span class="hl-1"> = </span><span class="hl-5">stream</span><span class="hl-1">.</span><span class="hl-0">map</span><span class="hl-1">(</span><span class="hl-5">x</span><span class="hl-1"> </span><span class="hl-6">=&gt;</span><span class="hl-1"> </span><span class="hl-5">x</span><span class="hl-1"> * </span><span class="hl-8">2</span><span class="hl-1">).</span><span class="hl-0">filter</span><span class="hl-1">(</span><span class="hl-5">x</span><span class="hl-1"> </span><span class="hl-6">=&gt;</span><span class="hl-1"> </span><span class="hl-5">x</span><span class="hl-1"> % </span><span class="hl-8">2</span><span class="hl-1"> === </span><span class="hl-8">0</span><span class="hl-1">);</span><br/><br/><span class="hl-3">// Take the first 3 elements of the transformed stream and convert to array</span><br/><span class="hl-6">const</span><span class="hl-1"> </span><span class="hl-7">result</span><span class="hl-1"> = </span><span class="hl-5">transformedStream</span><span class="hl-1">.</span><span class="hl-0">take</span><span class="hl-1">(</span><span class="hl-8">3</span><span class="hl-1">).</span><span class="hl-0">toArray</span><span class="hl-1">();</span><br/><br/><span class="hl-5">console</span><span class="hl-1">.</span><span class="hl-0">log</span><span class="hl-1">(</span><span class="hl-5">result</span><span class="hl-1">); </span><span class="hl-3">// Output: [2, 4, 6]</span>
 </code><button type="button">Copy</button></pre>
 
           <p>
-            Compile and publish your package when ready, following the Scripts
-            section below.
+            This example demonstrates: • Creating a lazy stream from an array •
+            Using map to transform values • Using filter to filter out certain
+            values • Using take to limit the results • Converting the final
+            stream to an array using toArray
           </p>
-          <p>Scripts</p>
+          <a id="md:scripts" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            Scripts<a
+              href="#md:scripts"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
           <p>
             A set of npm scripts are preconfigured to streamline development and
-            publishing: • npm run build: Compiles TypeScript to JavaScript in
-            multiple module formats (ESM, CommonJS, UMD, AMD). • npm test: Runs
-            Jest tests. • npm run lint: Checks code for linting errors using
-            ESLint. • npm run format: Formats code with Prettier. • npm run
-            docs: Generates documentation with TypeDoc. • npm run release: Bumps
-            version and updates changelog based on commit messages using
-            standard-version. • npm publish: Publishes the package to npm (run
-            after npm run release).
+            publishing: • <code>npm run build</code>: Compiles TypeScript to
+            JavaScript in multiple module formats (ESM, CommonJS, UMD, AMD). •
+            <code>npm test</code>: Runs Jest tests. • <code>npm run lint</code>:
+            Checks code for linting errors using ESLint. •
+            <code>npm run format</code>: Formats code with Prettier. •
+            <code>npm run docs</code>: Generates documentation with TypeDoc. •
+            <code>npm run release</code>: Bumps version and updates changelog
+            based on commit messages using standard-version. •
+            <code>npm publish</code>: Publishes the package to npm (run after
+            npm run release).
           </p>
-          <p>Configuration</p>
+          <a id="md:configuration" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            Configuration<a
+              href="#md:configuration"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
           <p>
             This template includes configuration files for various tools, such
-            as: • TypeScript (tsconfig.json): Configures compiler options and
-            output. • ESLint (.eslintrc.js): Configures linting rules for code
-            consistency. • Prettier (.prettierrc): Configures formatting rules
-            for consistent style. • Jest (jest.config.js): Configures Jest for
-            unit testing. • TypeDoc (typedoc.json): Configures TypeDoc for
-            documentation generation.
+            as: • TypeScript (<code>tsconfig.json</code>): Configures compiler
+            options and output. • ESLint (<code>eslint.config.cjs</code>):
+            Configures linting rules for code consistency. • Prettier
+            (<code>.prettierrc</code>): Configures formatting rules for
+            consistent style. • Jest (<code>jest.config.cjs</code>): Configures
+            Jest for unit testing. • TypeDoc (<code>typedoc.json</code>):
+            Configures TypeDoc for documentation generation.
           </p>
-          <p>Contributing</p>
+          <a id="md:contributing" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            Contributing<a
+              href="#md:contributing"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
           <p>
             We welcome contributions! To contribute: 1. Fork the repository and
-            create a new branch (git checkout -b feature/YourFeature). 2. Make
-            your changes and commit them (git commit -m &quot;Add
-            feature&quot;). 3. Push to the branch (git push origin
-            feature/YourFeature). 4. Open a Pull Request.
+            create a new branch (<code>git checkout -b feature/YourFeature</code
+            >). 2. Make your changes and commit them (<code
+              >git commit -m &quot;Add feature&quot;</code
+            >). 3. Push to the branch (<code
+              >git push origin feature/YourFeature</code
+            >). 4. Open a Pull Request.
           </p>
           <p>
             If you have any questions or suggestions, please reach out to us at
             <a href="mailto:monadicarts@gmail.com">monadicarts@gmail.com</a>.
           </p>
-          <p>License</p>
+          <a id="md:license" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            License<a
+              href="#md:license"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
           <p>This project is licensed under the MIT License.</p>
           <p>Developed and maintained by Monadica.</p>
-          <p>
-            Thank you for using <code>template-ts-npm</code>! We hope this
-            template helps you create amazing TypeScript npm packages with ease.
-          </p>
-          <p>Contact</p>
-          <pre><code>•	GitHub: https://github.com/monadicarts
+          <p>Thank you for using <code>@monadica/lazy-streams</code>!</p>
+          <a id="md:contact" class="tsd-anchor"></a>
+          <h2 class="tsd-anchor-link">
+            Contact<a
+              href="#md:contact"
+              aria-label="Permalink"
+              class="tsd-anchor-icon"
+              ><svg viewBox="0 0 24 24">
+                <use href="assets/icons.svg#icon-anchor"></use></svg
+            ></a>
+          </h2>
+          <pre><code>•	GitHub: github.com/monadicarts
 •	Website: monadica.com
 •	Email: monadicarts@gmail.com
 </code></pre>
@@ -399,18 +478,35 @@
                   <a href="#md:features"><span>Features</span></a>
                 </li>
                 <li>
+                  <a href="#md:installation"><span>Installation</span></a>
+                </li>
+                <li>
                   <a href="#md:getting-started"
                     ><span>Getting <wbr />Started</span></a
                   >
                 </li>
                 <li>
-                  <ul>
-                    <li>
-                      <a href="#md:1-clone-the-repository"
-                        ><span>1. <wbr />Clone the <wbr />Repository</span></a
-                      >
-                    </li>
-                  </ul>
+                  <a href="#md:project-structure"
+                    ><span>Project <wbr />Structure</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#md:usage"><span>Usage</span></a>
+                </li>
+                <li>
+                  <a href="#md:scripts"><span>Scripts</span></a>
+                </li>
+                <li>
+                  <a href="#md:configuration"><span>Configuration</span></a>
+                </li>
+                <li>
+                  <a href="#md:contributing"><span>Contributing</span></a>
+                </li>
+                <li>
+                  <a href="#md:license"><span>License</span></a>
+                </li>
+                <li>
+                  <a href="#md:contact"><span>Contact</span></a>
                 </li>
               </ul>
             </div>

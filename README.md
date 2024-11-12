@@ -1,19 +1,23 @@
 # LazyStreams
 
-Welcome to **lazy-streams**, an elegant and modular TypeScript library. Developed by [Monadica](http://monadica.com).
+Welcome to **@monadica/lazy-streams**, an elegant and modular TypeScript library. Developed by [Monadica](http://monadica.com).
 
 ---
 
 ## Table of Contents
 
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Scripts](#scripts)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
+- [LazyStreams](#lazystreams)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Installation](#installation)
+  - [Getting Started](#getting-started)
+  - [Project Structure](#project-structure)
+  - [Usage](#usage)
+  - [Scripts](#scripts)
+  - [Configuration](#configuration)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
 ---
 
@@ -28,11 +32,19 @@ Welcome to **lazy-streams**, an elegant and modular TypeScript library. Develope
 
 ---
 
+## Installation
+
+To install the latest version of `@monadica/lazy-streams` from npm, use the following command:
+
+```bash
+npm install @monadica/lazy-streams
+```
+
 ## Getting Started
 
-To use this template for your next TypeScript npm package, follow these steps:
+To use or modify this library, follow these steps:
 
-### 1. Clone the Repository
+1. Clone the Repository
 
 Clone this repository to your local machine and navigate to the project directory.
 
@@ -53,7 +65,7 @@ npm install
 
 You’re now ready to start building your own TypeScript npm package!
 
-Project Structure
+## Project Structure
 
 ```bash
 lazy-streams/
@@ -91,63 +103,69 @@ lazy-streams/
 └── typedoc.json             # TypeDoc configuration file for generating documentation based on TSDoc comments
 ```
 
-Usage
+## Usage
 
-After setting up the template and customizing it for your project, you can start adding your TypeScript code in the src/ directory.
-
-Export your public API in src/index.ts, and this will serve as the entry point for your npm package. Here’s an example of a basic function and class you can add:
+Here’s a short example of how to use the `@monadica/lazy-streams` library to create a lazy stream, apply transformations, and retrieve results:
 
 ```typescript
-// src/index.ts
-export const greet = (name: string): string => `Hello, ${name}!`;
+import { LazyStream } from "@monadica/lazy-streams";
 
-export class Greeter {
-  constructor(public greeting: string) {}
-  greet(name: string): string {
-    return `${this.greeting}, ${name}!`;
-  }
-}
+// Create a lazy stream from an array
+const stream = LazyStream.from([1, 2, 3, 4, 5]);
+
+// Apply transformations: multiply each element by 2 and filter even results
+const transformedStream = stream.map((x) => x * 2).filter((x) => x % 2 === 0);
+
+// Take the first 3 elements of the transformed stream and convert to array
+const result = transformedStream.take(3).toArray();
+
+console.log(result); // Output: [2, 4, 6]
 ```
 
-Compile and publish your package when ready, following the Scripts section below.
+This example demonstrates:
+• Creating a lazy stream from an array
+• Using map to transform values
+• Using filter to filter out certain values
+• Using take to limit the results
+• Converting the final stream to an array using toArray
 
-Scripts
+## Scripts
 
 A set of npm scripts are preconfigured to streamline development and publishing:
-• npm run build: Compiles TypeScript to JavaScript in multiple module formats (ESM, CommonJS, UMD, AMD).
-• npm test: Runs Jest tests.
-• npm run lint: Checks code for linting errors using ESLint.
-• npm run format: Formats code with Prettier.
-• npm run docs: Generates documentation with TypeDoc.
-• npm run release: Bumps version and updates changelog based on commit messages using standard-version.
-• npm publish: Publishes the package to npm (run after npm run release).
+• `npm run build`: Compiles TypeScript to JavaScript in multiple module formats (ESM, CommonJS, UMD, AMD).
+• `npm test`: Runs Jest tests.
+• `npm run lint`: Checks code for linting errors using ESLint.
+• `npm run format`: Formats code with Prettier.
+• `npm run docs`: Generates documentation with TypeDoc.
+• `npm run release`: Bumps version and updates changelog based on commit messages using standard-version.
+• `npm publish`: Publishes the package to npm (run after npm run release).
 
-Configuration
+## Configuration
 
 This template includes configuration files for various tools, such as:
-• TypeScript (tsconfig.json): Configures compiler options and output.
-• ESLint (.eslintrc.js): Configures linting rules for code consistency.
-• Prettier (.prettierrc): Configures formatting rules for consistent style.
-• Jest (jest.config.js): Configures Jest for unit testing.
-• TypeDoc (typedoc.json): Configures TypeDoc for documentation generation.
+• TypeScript (`tsconfig.json`): Configures compiler options and output.
+• ESLint (`eslint.config.cjs`): Configures linting rules for code consistency.
+• Prettier (`.prettierrc`): Configures formatting rules for consistent style.
+• Jest (`jest.config.cjs`): Configures Jest for unit testing.
+• TypeDoc (`typedoc.json`): Configures TypeDoc for documentation generation.
 
-Contributing
+## Contributing
 
-We welcome contributions! To contribute: 1. Fork the repository and create a new branch (git checkout -b feature/YourFeature). 2. Make your changes and commit them (git commit -m "Add feature"). 3. Push to the branch (git push origin feature/YourFeature). 4. Open a Pull Request.
+We welcome contributions! To contribute: 1. Fork the repository and create a new branch (`git checkout -b feature/YourFeature`). 2. Make your changes and commit them (`git commit -m "Add feature"`). 3. Push to the branch (`git push origin feature/YourFeature`). 4. Open a Pull Request.
 
 If you have any questions or suggestions, please reach out to us at monadicarts@gmail.com.
 
-License
+## License
 
 This project is licensed under the MIT License.
 
 Developed and maintained by Monadica.
 
-Thank you for using `template-ts-npm`! We hope this template helps you create amazing TypeScript npm packages with ease.
+Thank you for using `@monadica/lazy-streams`!
 
-Contact
+## Contact
 
-    •	GitHub: https://github.com/monadicarts
+    •	GitHub: github.com/monadicarts
     •	Website: monadica.com
     •	Email: monadicarts@gmail.com
 
