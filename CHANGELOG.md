@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.14](https://github.com/monadicarts/lazy-streams/compare/v1.0.12...v1.0.14) (2024-11-14)
+
+
+### Bug Fixes
+
+* npm deps issue, had to remove rollup ([4b5136f](https://github.com/monadicarts/lazy-streams/commit/4b5136fb6ddf05f8e1b20c6a5e85a7b9fef65673))
+
 ### [1.0.13](https://github.com/monadicarts/lazy-streams/compare/v1.0.12...v1.0.13) (2024-11-12)
 
 ### [1.0.12](https://github.com/monadicarts/lazy-streams/compare/v1.0.11...v1.0.12) (2024-11-12)
