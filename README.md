@@ -67,40 +67,59 @@ You’re now ready to start building your own TypeScript npm package!
 
 ## Project Structure
 
-```bash
+```
 lazy-streams/
-├── CHANGELOG.md             # Automatically generated changelog for tracking version history and changes
-├── LICENSE                  # License file, typically contains the MIT license or other open-source license terms
-├── README.md                # Main documentation file for the project, with setup, usage instructions, and more
-
-├── docs                     # Directory containing generated documentation files from TypeDoc
-|   ├── assets               # Assets for the documentation, such as CSS, icons, and JavaScript files for styling and functionality
-|   |   ├── highlight.css    # CSS file for syntax highlighting in code samples within the documentation
-|   |   ├── icons.js         # JavaScript file for managing icons in the documentation
-|   |   ├── icons.svg        # SVG file containing icon definitions
-|   |   ├── main.js          # Main JavaScript file for documentation page interactivity
-|   |   ├── navigation.js    # JavaScript file for handling navigation in the documentation
-|   |   ├── search.js        # JavaScript file for implementing search functionality within the documentation
-|   |   └── style.css        # General styling for the documentation pages
-|   ├── classes              # Documentation pages for each class defined in the project
-|   |   └── LazyStream.html  # HTML documentation page for the LazyStream class
-|   ├── index.html           # Main entry point for the generated documentation
-|   └── modules.html         # Documentation index for modules in the project
-
-├── eslint.config.cjs        # ESLint configuration file in CommonJS format for linting the codebase
-├── jest.config.cjs          # Jest configuration file in CommonJS format for setting up the testing environment
-├── package-lock.json        # Automatically generated lock file for managing exact dependency versions
-├── package.json             # Main package configuration file with metadata, dependencies, and scripts
-├── rollup.config.js         # Rollup configuration file for bundling the project into different module formats
-
-├── src                      # Directory containing the source code and tests
-|   ├── LazyStream.ts        # Main implementation file for the LazyStream class
-|   ├── __tests__            # Directory for unit tests
-|   |   └── LazyStream.spec.ts # Unit test file for the LazyStream class
-|   └── index.ts             # Entry point of the module, exports main classes and functions
-
-├── tsconfig.json            # TypeScript configuration file with compiler options
-└── typedoc.json             # TypeDoc configuration file for generating documentation based on TSDoc comments
+├── CHANGELOG.md              # Automatically generated changelog for tracking
+|                             #   version history and changes
+├── LICENSE                   # License file, typically contains the MIT
+|                             #   license or other open-source license terms
+├── README.md                 # Main documentation file for the project, with
+|                             #   setup, usage instructions, and more
+├── docs                      # Directory containing generated documentation
+|                             #   files from TypeDoc
+|   ├── assets                # Assets for the documentation, such as CSS,
+|   |                         #   icons, and JavaScript files for styling and
+|   |                         #   functionality
+|   |   ├── highlight.css     # CSS file for syntax highlighting in code
+|   |   |                     #   samples within the documentation
+|   |   ├── icons.js          # JavaScript file for managing icons in the
+|   |   |                     #   documentation
+|   |   ├── icons.svg         # SVG file containing icon definitions
+|   |   ├── main.js           # Main JavaScript file for documentation page
+|   |   |                     #   interactivity
+|   |   ├── navigation.js     # JavaScript file for handling navigation in the
+|   |   |                     #   documentation
+|   |   ├── search.js         # JavaScript file for implementing search
+|   |   |                     #   functionality within the documentation
+|   |   └── style.css         # General styling for the documentation pages
+|   ├── classes               # Documentation pages for each class defined in
+|   |   |                     #   the project
+|   |   └── LazyStream.html   # HTML documentation page for the LazyStream
+|   |                         #   class
+|   ├── index.html            # Main entry point for the generated
+|   |                         #   documentation
+|   └── modules.html          # Documentation index for modules in the project
+├── eslint.config.cjs         # ESLint configuration file in CommonJS format
+|                             #   for linting the codebase
+├── jest.config.cjs           # Jest configuration file in CommonJS format for
+|                             #   setting up the testing environment
+├── package-lock.json         # Automatically generated lock file for managing
+|                             #   exact dependency versions
+├── package.json              # Main package configuration file with metadata,
+|                             #   dependencies, and scripts
+├── rollup.config.js          # Rollup configuration file for bundling the
+|                             #   project into different module formats
+├── src                       # Directory containing the source code and tests
+|   ├── LazyStream.ts         # Main implementation file for the LazyStream
+|   |                         #   class
+|   ├── __tests__             # Directory for unit tests
+|   |   └── LazyStream.spec.ts# Unit test file for the LazyStream class
+|   └── index.ts              # Entry point of the module, exports main classes
+|                             #   and functions
+├── tsconfig.json             # TypeScript configuration file with compiler
+|                             #   options
+└── typedoc.json              # TypeDoc configuration file for generating
+                              #   documentation based on TSDoc comments
 ```
 
 ## Usage
@@ -123,35 +142,43 @@ console.log(result); // Output: [2, 4, 6]
 ```
 
 This example demonstrates:
-• Creating a lazy stream from an array
-• Using map to transform values
-• Using filter to filter out certain values
-• Using take to limit the results
-• Converting the final stream to an array using toArray
+
+- Creating a lazy stream from an array
+- Using map to transform values
+- Using filter to filter out certain values
+- Using take to limit the results
+- Converting the final stream to an array using toArray
 
 ## Scripts
 
 A set of npm scripts are preconfigured to streamline development and publishing:
-• `npm run build`: Compiles TypeScript to JavaScript in multiple module formats (ESM, CommonJS, UMD, AMD).
-• `npm test`: Runs Jest tests.
-• `npm run lint`: Checks code for linting errors using ESLint.
-• `npm run format`: Formats code with Prettier.
-• `npm run docs`: Generates documentation with TypeDoc.
-• `npm run release`: Bumps version and updates changelog based on commit messages using standard-version.
-• `npm publish`: Publishes the package to npm (run after npm run release).
+
+- `npm run build`: Compiles TypeScript to JavaScript in multiple module formats (ESM, CommonJS, UMD, AMD).
+- `npm test`: Runs Jest tests.
+- `npm run lint`: Checks code for linting errors using ESLint.
+- `npm run format`: Formats code with Prettier.
+- `npm run docs`: Generates documentation with TypeDoc.
+- `npm run release`: Bumps version and updates changelog based on commit messages using standard-version.
+- `npm publish`: Publishes the package to npm (run after npm run release).
 
 ## Configuration
 
 This template includes configuration files for various tools, such as:
-• TypeScript (`tsconfig.json`): Configures compiler options and output.
-• ESLint (`eslint.config.cjs`): Configures linting rules for code consistency.
-• Prettier (`.prettierrc`): Configures formatting rules for consistent style.
-• Jest (`jest.config.cjs`): Configures Jest for unit testing.
-• TypeDoc (`typedoc.json`): Configures TypeDoc for documentation generation.
+
+- TypeScript (`tsconfig.json`): Configures compiler options and output.
+- ESLint (`eslint.config.cjs`): Configures linting rules for code consistency.
+- Prettier (`.prettierrc`): Configures formatting rules for consistent style.
+- Jest (`jest.config.cjs`): Configures Jest for unit testing.
+- TypeDoc (`typedoc.json`): Configures TypeDoc for documentation generation.
 
 ## Contributing
 
-We welcome contributions! To contribute: 1. Fork the repository and create a new branch (`git checkout -b feature/YourFeature`). 2. Make your changes and commit them (`git commit -m "Add feature"`). 3. Push to the branch (`git push origin feature/YourFeature`). 4. Open a Pull Request.
+We welcome contributions! To contribute:
+
+1. Fork the repository and create a new branch (`git checkout -b feature/YourFeature`).
+2. Make your changes and commit them (`git commit -m "Add feature"`).
+3. Push to the branch (`git push origin feature/YourFeature`).
+4. Open a Pull Request.
 
 If you have any questions or suggestions, please reach out to us at monadicarts@gmail.com.
 
@@ -165,8 +192,8 @@ Thank you for using `@monadica/lazy-streams`!
 
 ## Contact
 
-    •	GitHub: github.com/monadicarts
-    •	Website: monadica.com
-    •	Email: monadicarts@gmail.com
+- GitHub: [github.com/monadicarts](https://github.com/monadicarts)
+- Website: [monadica.com](https://monadica.com)
+- Email: [monadicarts@gmail.com](mailto://monadicarts@gmail.com)
 
 Happy Coding! 🚀
