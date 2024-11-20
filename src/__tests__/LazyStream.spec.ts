@@ -1,3 +1,4 @@
+import { ILazyStream } from "../ILazyStream";
 import { LazyStream } from "../LazyStream";
 
 describe("LazyStream", () => {

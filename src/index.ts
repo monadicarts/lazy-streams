@@ -3,4 +3,5 @@
  * This is a TypeScript library that provides lazyloaded data stream processing a sample npm module.
  */
 
-export { ILazyStream, LazyStream } from "./LazyStream";
+export * from "./ILazyStream";
+export * from "./LazyStream";
