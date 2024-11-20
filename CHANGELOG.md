@@ -6,22 +6,19 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [1.1.1](https://github.com/monadicarts/lazy-streams/compare/v1.1.0...v1.1.1) (2024-11-20)
 
-
 ### Bug Fixes
 
-* package / parcel settings ([86100d9](https://github.com/monadicarts/lazy-streams/commit/86100d9960ba4a300b9d53da3b316d50d5e0eb7e))
+- package / parcel settings ([86100d9](https://github.com/monadicarts/lazy-streams/commit/86100d9960ba4a300b9d53da3b316d50d5e0eb7e))
 
 ## [1.1.0](https://github.com/monadicarts/lazy-streams/compare/v1.0.12...v1.1.0) (2024-11-20)
 
-
 ### Features
 
-* tsup -> parcel for build output ([086f5b2](https://github.com/monadicarts/lazy-streams/commit/086f5b21c3e41c8eb952e1927690f42667b4a8fa))
-
+- tsup -> parcel for build output ([086f5b2](https://github.com/monadicarts/lazy-streams/commit/086f5b21c3e41c8eb952e1927690f42667b4a8fa))
 
 ### Bug Fixes
 
-* npm deps issue, had to remove rollup ([4b5136f](https://github.com/monadicarts/lazy-streams/commit/4b5136fb6ddf05f8e1b20c6a5e85a7b9fef65673))
+- npm deps issue, had to remove rollup ([4b5136f](https://github.com/monadicarts/lazy-streams/commit/4b5136fb6ddf05f8e1b20c6a5e85a7b9fef65673))
 
 ### [1.0.14](https://github.com/monadicarts/lazy-streams/compare/v1.0.12...v1.0.14) (2024-11-14)
 

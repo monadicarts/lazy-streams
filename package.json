@@ -17,21 +17,6 @@
   "unpkg": "./dist/index.js",
   "jsdelivr": "./dist/index.js",
   "packageManager": "npm@10.9.0",
-  "exports": {
-    ".": {
-      "module": "./dist/main.js",
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/main.js"
-      },
-      "require": {
-        "types": "./dist/types.d.ts",
-        "default": "./dist/index.js"
-      },
-      "default": "./dist/main.js"
-    },
-    "./package.json": "./package.json"
-  },
   "publishConfig": {
     "access": "public"
   },
@@ -43,7 +28,7 @@
     "serve": "parcel docs/index.html --open firefox",
     "watch": "parcel watch",
     "prebuild": "npx rimraf dist && mkdir dist",
-    "build": "parcel build src/index.ts --dist-dir dist --no-content-hash",
+    "build": "parcel build src/index.ts",
     "prepare": "npm run build",
     "precompress": "rm dist/template-ts-npm.*",
     "compress": "tar -czvf template-ts-npm.tar.gz dist && zip -r template-ts-npm.zip dist && mv template-ts-npm.* dist/",
@@ -109,7 +94,7 @@
   },
   "targets": {
     "main": {
-      "distDir": "dist",
+      "distDir": "./dist",
       "context": "node",
       "isLibrary": true,
       "scopeHoist": true,
@@ -119,7 +104,7 @@
       }
     },
     "module": {
-      "distDir": "dist",
+      "distDir": "./dist",
       "context": "node",
       "isLibrary": true,
       "scopeHoist": true,
@@ -129,7 +114,7 @@
       }
     },
     "browser": {
-      "distDir": "dist",
+      "distDir": "./dist",
       "context": "browser",
       "isLibrary": true,
       "scopeHoist": true,
