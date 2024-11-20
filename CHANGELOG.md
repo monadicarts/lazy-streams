@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/monadicarts/lazy-streams/compare/v1.1.0...v1.1.1) (2024-11-20)
+
+
+### Bug Fixes
+
+* package / parcel settings ([86100d9](https://github.com/monadicarts/lazy-streams/commit/86100d9960ba4a300b9d53da3b316d50d5e0eb7e))
+
 ## [1.1.0](https://github.com/monadicarts/lazy-streams/compare/v1.0.12...v1.1.0) (2024-11-20)
 
 
