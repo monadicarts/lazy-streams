@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/monadicarts/lazy-streams/compare/v1.0.12...v1.1.0) (2024-11-20)
+
+
+### Features
+
+* tsup -> parcel for build output ([086f5b2](https://github.com/monadicarts/lazy-streams/commit/086f5b21c3e41c8eb952e1927690f42667b4a8fa))
+
+
+### Bug Fixes
+
+* npm deps issue, had to remove rollup ([4b5136f](https://github.com/monadicarts/lazy-streams/commit/4b5136fb6ddf05f8e1b20c6a5e85a7b9fef65673))
+
 ### [1.0.14](https://github.com/monadicarts/lazy-streams/compare/v1.0.12...v1.0.14) (2024-11-14)
 
 ### Bug Fixes
